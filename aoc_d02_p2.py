@@ -57,7 +57,6 @@ def report_evaluation(list_report, mode):
 
         decrease_rating = True
 
-
     if rising_rating or decrease_rating:
         return True
     else:

@@ -6,7 +6,7 @@ Author: Sebastian Werner
 with open('test.txt', 'r') as file:
     input_content = file.readlines()
 
-list_clean_lines = []
+list_input = []
 for line in input_content:
     clean_line = line.rstrip('\n')
-    list_clean_lines.append(clean_line)
+    list_input.append(clean_line)
