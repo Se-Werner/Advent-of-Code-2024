@@ -7,13 +7,12 @@ import re
 with open('aoc_d03_input.txt', 'r') as file:
     input_content = file.readlines()
 
-for x in input_content:
-    print('hit')
 
 input_string = input_content[0]
 
 
 list_functions = re.findall(r'mul\(\d{1,3},\d{1,3}\)', input_string)
+
 
 solution_counter_1 = 0
 for function in list_functions:
@@ -38,6 +37,7 @@ for do_func in re.finditer(r'do\(\)', input_string):
 
 for dont_func in re.finditer(r"don't\(\)", input_string):
     dict_function[str(dont_func.span()[0])] = dont_func.group(0)
+
 
 work_flag = True
 solution_counter_2 = 0
