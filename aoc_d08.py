@@ -57,10 +57,6 @@ def updated_antinode(first_coord, second_coord):
     return coord_list
 
 
-
-
-
-
 # Process Input
 # ---------------------------------------------------------------------
 
